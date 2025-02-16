@@ -12,6 +12,6 @@ namespace QueuesAnton
     {
         static void Main(string[] args)
         {
+
         }
     }
-}
