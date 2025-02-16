@@ -12,6 +12,10 @@ namespace QueuesAnton
     {
         static void Main(string[] args)
         {
-
+            Cola queue = new Cola(5);
+            queue.Enqueue(2);
+            queue.Dequeue();
+            queue.PrintQueue();
         }
     }
+}
