@@ -64,9 +64,30 @@ namespace QueuesAnton.Source.DataStructures
             }
         }
 
+        public Node Front()
+        {
+            if (IsEmpty()) return null;
+            return first;
+        }
+
+        public Node Rear()
+        {
+            if (IsEmpty()) return null;
+            return last;
+        }
+
+        public object FrontValue()
+        {
+            return IsEmpty() ? null : first.data;
+        }
+
+        public object RearValue()
+        {
+            return IsEmpty() ? null : last.data;
+        }
+
         public bool IsEmpty() { return first == null; }
 
-        public int GetLength() { return length; }
-        public int GetSize() { return length; }
+        public int Size() { return length; }
     }
 }
