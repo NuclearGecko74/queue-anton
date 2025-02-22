@@ -1,4 +1,4 @@
-# Sistema de Atención de Clientes con Cola Personalizada
+# Implementación de Colas en C#
 
 ## Descripción
 Este proyecto implementa un sistema de atención de clientes utilizando una cola personalizada en C#. La cola está implementada mediante una estructura de datos personalizada (`Cola`), basada en una lista enlazada.
