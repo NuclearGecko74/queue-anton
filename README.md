@@ -17,6 +17,7 @@ QueuesAnton/
 │── Source/
 │   └── DataStructures/
 │       └── Cola.cs  # Implementación de la estructura de cola
+        └── Node.cs  # Implementación Nodo
 │── Program.cs       # Código principal con la lógica del sistema
 │── README.md        # Documentación del proyecto
 ```
