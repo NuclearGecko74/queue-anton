@@ -65,12 +65,3 @@ var atendido = queue.Dequeue();
 Console.WriteLine($"Cliente atendido: {atendido.data}");
 ```
 
-## Contribuciones
-Las contribuciones son bienvenidas. Si deseas mejorar el código o agregar nuevas funcionalidades, realiza un fork del repositorio y envía un pull request.
-
-## Licencia
-Este proyecto está bajo la licencia MIT. Puedes usarlo y modificarlo libremente.
-
----
-¡Gracias por utilizar el Sistema de Atención de Clientes con Cola Personalizada!
-
