@@ -14,7 +14,7 @@ namespace QueuesAnton
         {
             Cola queue = new Cola();
 
-            while (1 == 1)
+            while (true)
             {
                 Console.Clear();
                 PrintMenu();
@@ -24,7 +24,7 @@ namespace QueuesAnton
 
                 switch (opcion)
                 {
-                    case "1":
+                    case "1": // Opción para agregar un nuevo cliente a la cola.
                         Console.Clear();
                         Console.WriteLine("=== LLEGADA DE NUEVO CLIENTE ===");
                         Console.Write("Ingrese el nombre del cliente: ");
@@ -35,7 +35,7 @@ namespace QueuesAnton
                         Pause();
                         break;
 
-                    case "2":
+                    case "2": // Opción para atender al siguiente cliente en la cola.
                         Console.Clear();
                         Console.WriteLine("=== ATENDER CLIENTE ===");
                         var atendido = queue.Dequeue();
@@ -51,19 +51,19 @@ namespace QueuesAnton
                         Pause();
                         break;
 
-                    case "3":
+                    case "3": // Opción para mostrar el estado actual de la cola.
                         Console.Clear();
                         Console.WriteLine("=== ESTADO DE LA COLA ===");
                         PrintQueueState(queue);
                         Pause();
                         break;
 
-                    case "4":
+                    case "4": // Opción para salir del programa.
                         Console.Clear();
                         Console.WriteLine("Saliendo del sistema de atención...");
                         return;
 
-                    default:
+                    default: // Mensaje de error si la opción ingresada no es válida.
                         Console.Clear();
                         Console.WriteLine("Opción no válida. Intenta de nuevo.\n");
                         Pause();
@@ -71,6 +71,7 @@ namespace QueuesAnton
                 }
             }
         }
+
         static void PrintMenu()
         {
             Console.WriteLine("=====================================");
